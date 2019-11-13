@@ -10,5 +10,10 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos.Nodos
     {
         public T Value { get; set; }
         public NodoSimple<T> Next { get; set; }
+
+        public NodoSimple(T value)
+        {
+            Value = value;
+        }
     }
 }

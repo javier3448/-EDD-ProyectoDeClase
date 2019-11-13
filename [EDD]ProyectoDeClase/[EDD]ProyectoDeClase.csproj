@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EstructurasDeDatos\Listas\ListaSimple.cs" />
+    <Compile Include="EstructurasDeDatos\ArrayDinamico.cs" />
+    <Compile Include="EstructurasDeDatos\HashTable.cs" />
+    <Compile Include="EstructurasDeDatos\ListaDoble.cs" />
+    <Compile Include="EstructurasDeDatos\MatrizDoble.cs" />
     <Compile Include="EstructurasDeDatos\Nodos\NodoDoble.cs" />
     <Compile Include="EstructurasDeDatos\Nodos\NodoSimple.cs" />
     <Compile Include="Form1.cs">
@@ -82,5 +85,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
