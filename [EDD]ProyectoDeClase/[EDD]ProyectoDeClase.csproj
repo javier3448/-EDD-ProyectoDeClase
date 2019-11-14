@@ -46,18 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EstructurasDeDatos\ArrayDinamico.cs" />
-    <Compile Include="EstructurasDeDatos\HashTable.cs" />
-    <Compile Include="EstructurasDeDatos\ListaDoble.cs" />
-    <Compile Include="EstructurasDeDatos\MatrizDoble.cs" />
-    <Compile Include="EstructurasDeDatos\Nodos\NodoDoble.cs" />
-    <Compile Include="EstructurasDeDatos\Nodos\NodoSimple.cs" />
+    <Compile Include="EstructurasDeDatos\SimpleList.cs" />
+    <Compile Include="Interfaces\IMyHash.cs" />
+    <Compile Include="EstructurasDeDatos\MyHashtable.cs" />
+    <Compile Include="Interfaces\Indexable.cs" />
+    <Compile Include="EstructurasDeDatos\DoubleList.cs" />
+    <Compile Include="EstructurasDeDatos\Matrix.cs" />
+    <Compile Include="EstructurasDeDatos\Nodos\DoubleNode.cs" />
+    <Compile Include="EstructurasDeDatos\Nodos\SimpleNode.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IndexableDePrueba.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
