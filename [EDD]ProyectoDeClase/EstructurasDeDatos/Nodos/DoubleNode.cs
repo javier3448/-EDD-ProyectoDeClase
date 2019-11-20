@@ -22,5 +22,10 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos.Nodos
         {
             Value = value;
         }
+
+        public string GetDotLabel()
+        {
+            return Value.ToString();
+        }
     }
 }

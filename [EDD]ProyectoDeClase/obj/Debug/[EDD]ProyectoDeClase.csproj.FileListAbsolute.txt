@@ -16,3 +16,6 @@ C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Estructuras\Proyecto unico\[EDD
 C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Estructuras\Proyecto unico\[EDD]ProyectoDeClase\-EDD-ProyectoDeClase\[EDD]ProyectoDeClase\obj\Debug\[EDD]ProyectoDeClase.csproj.GenerateResource.cache
 C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Estructuras\Proyecto unico\[EDD]ProyectoDeClase\-EDD-ProyectoDeClase\[EDD]ProyectoDeClase\obj\Debug\[EDD]ProyectoDeClase.exe
 C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Estructuras\Proyecto unico\[EDD]ProyectoDeClase\-EDD-ProyectoDeClase\[EDD]ProyectoDeClase\obj\Debug\[EDD]ProyectoDeClase.pdb
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Estructuras\Proyecto unico\[EDD]ProyectoDeClase\-EDD-ProyectoDeClase\[EDD]ProyectoDeClase\obj\Debug\_EDD_ProyectoDeClase.MyGui.MainForm.resources
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Estructuras\Proyecto unico\[EDD]ProyectoDeClase\-EDD-ProyectoDeClase\[EDD]ProyectoDeClase\bin\Debug\GraphVizWrapper.dll
+C:\Users\Alvarez\Dropbox\Colegio\2019\Semestre 2\Estructuras\Proyecto unico\[EDD]ProyectoDeClase\-EDD-ProyectoDeClase\[EDD]ProyectoDeClase\obj\Debug\[EDD]ProyectoDeClase.csproj.CopyComplete

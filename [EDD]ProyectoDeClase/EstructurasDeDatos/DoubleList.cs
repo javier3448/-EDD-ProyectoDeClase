@@ -29,6 +29,7 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos
             {
                 First = new DoubleNode<T>(obj);
                 Last = First;
+                Length++;
                 return true;
             }
             var previousFirst = First;
@@ -49,6 +50,7 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos
             {
                 Last = new DoubleNode<T>(obj);
                 First = Last;
+                Length++;
                 return true;
             }
             var previousLast = Last;
@@ -94,24 +96,15 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos
             var left = curr.Left;
             var right = curr.Right;
 
-            if (left == null && right == null)//curr es first Y last
-            {
-                First = null;
-                Last = null;
-                Length--;
-                return;
-            }
-
             if (left == null)//curr es first
                 First = right;
             else
-                right.Left = left;
+                left.Right = right;
 
             if (right == null)//curr es last
                 Last = left;
             else
-                left.Right = right;
-
+                right.Left = left;
             Length--;
         }
 
@@ -138,7 +131,7 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos
             if (index < 0 || index >= Length)
                 return null;
             DoubleNode<T> curr = First;
-            for (int i = 0; i < index + 1; i++)
+            for (int i = 0; i < index; i++)
             {
                 curr = curr.Right;
             }
@@ -181,6 +174,32 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos
         IEnumerator IEnumerable.GetEnumerator()
         {
             return ((IEnumerable)GetMyEnumerable()).GetEnumerator();
+        }
+
+        public string GetDot()
+        {
+            var sb = new StringBuilder();
+            sb.Append("digraph Sparce_Matrix{\n");
+            sb.Append("node[shape = box];\n");
+
+            var curr = First;
+            while (curr != null)
+            {
+                sb.Append(curr.GetHashCode() + "[label = \"" + curr.GetDotLabel() + "\"];\n");
+                if (curr.Left != null)
+                {
+                    sb.Append(curr.GetHashCode() + "->" + curr.Left.GetHashCode() + ";\n");
+                }
+                if (curr.Right != null)
+                {
+                    sb.Append(curr.GetHashCode() + "->" + curr.Right.GetHashCode() + ";\n");
+                }
+                curr = curr.Right;
+            }
+
+            sb.Append("}");
+
+            return sb.ToString();
         }
     }
 }

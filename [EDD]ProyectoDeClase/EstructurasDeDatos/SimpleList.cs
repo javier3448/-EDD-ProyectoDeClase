@@ -102,21 +102,13 @@ namespace _EDD_ProyectoDeClase.EstructurasDeDatos
             var left = prev;
             var right = node.Next;
 
-            if (left == null && right == null)//curr es first Y last
-            {
-                First = null;
-                Last = null;
-                Length--;
-                return;
-            }
-
             if (left == null)//curr es first
                 First = right;
+            else
+                left.Next = right;
 
             if (right == null)//curr es last
                 Last = left;
-            else
-                left.Next = right;
 
             Length--;
         }
